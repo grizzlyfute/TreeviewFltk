@@ -1,0 +1,5 @@
+editor = echo %path%
+dirEditor = echo dirEdit %path%
+fileFilter = -*.o;-*.a
+dirFilter = -.svn
+directory = /home/oursenpeluche/Desktop/treeview_fltk

@@ -1,0 +1,8 @@
+#ifndef RESOURCE_RC_INCLUDED
+#define RESOURCE_RC_INCLUDED
+
+// Windows file only
+MAINICON  ICON  "icon.ico"
+101  ICON    DISCARDABLE     "icon.ico"
+
+#endif /* RESOURCE_RC_INCLUDED */

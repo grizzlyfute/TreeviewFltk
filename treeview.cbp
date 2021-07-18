@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="treeview" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/treeview" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Debug" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/treeview" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/Release" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-fomit-frame-pointer" />
+					<Add option="-fexpensive-optimizations" />
+					<Add option="-Os" />
+					<Add option="-Wall" />
+					<Add option="-ffunction-sections -fdata-sections" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-Wl,--gc-sections" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wnon-virtual-dtor" />
+			<Add option="-Winit-self" />
+			<Add option="-Wfloat-equal" />
+			<Add option="-Winline" />
+			<Add option="-Wunreachable-code" />
+			<Add option="-Wall" />
+			<Add option="-mms-bitfields" />
+			<Add option="-DWIN32" />
+			<Add directory="C:/Program Files/CodeBlocks/externalLibs/fltk1.3/include" />
+		</Compiler>
+		<Linker>
+			<Add library="fltk" />
+			<Add library="ole32" />
+			<Add library="uuid" />
+			<Add library="comctl32" />
+			<Add directory="C:/Program Files/CodeBlocks/externalLibs/fltk1.3/lib" />
+		</Linker>
+		<Unit filename="src/global_configuration.cpp" />
+		<Unit filename="src/global_configuration.h" />
+		<Unit filename="src/icons.cpp" />
+		<Unit filename="src/icons.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/options.cpp" />
+		<Unit filename="src/options.h" />
+		<Unit filename="src/resources.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/treeview.cpp" />
+		<Unit filename="src/treeview.h" />
+		<Unit filename="src/utils.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
